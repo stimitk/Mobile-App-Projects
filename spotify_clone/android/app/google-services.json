@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "472214943651",
+    "project_id": "spotify-clone-firebase-bhondu",
+    "storage_bucket": "spotify-clone-firebase-bhondu.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:472214943651:android:24c173c675ad9232048c16",
+        "android_client_info": {
+          "package_name": "com.example.spotify_clone"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4gONU0zBx31iuYWhoXbED5LdjcWjDiwM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
