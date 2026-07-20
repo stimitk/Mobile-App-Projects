@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/auth/login_screen.dart';
-import 'package:flutter_application_1/home/home_screen.dart';
+import 'package:flutter_application_1/screens/auth/login_screen.dart';
+import 'package:flutter_application_1/screens/home/home_screen.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 class RegisterScreen extends StatefulWidget {
@@ -16,7 +16,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
   bool loading = false;
   final supabase = Supabase.instance.client;
 
-  register() async {
+  void register() async {
     setState(() {
       loading = true;
     });

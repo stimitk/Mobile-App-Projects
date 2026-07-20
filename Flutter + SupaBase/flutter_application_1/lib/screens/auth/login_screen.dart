@@ -1,8 +1,8 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/auth/register_screen.dart';
-import 'package:flutter_application_1/home/home_screen.dart';
+import 'package:flutter_application_1/screens/auth/register_screen.dart';
+import 'package:flutter_application_1/screens/home/home_screen.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
@@ -20,7 +20,7 @@ class _LoginScreenState extends State<LoginScreen> {
   bool loading = false;
   final supabase = Supabase.instance.client;
 
-  login() async {
+  void login() async {
     setState(() {
       loading = true;
     });
@@ -47,7 +47,7 @@ class _LoginScreenState extends State<LoginScreen> {
     }
   }
 
-  continueWithGoogle() async {
+  void continueWithGoogle() async {
     try {
       GoogleSignIn googleSignIn = GoogleSignIn.instance;
       await googleSignIn.initialize(
